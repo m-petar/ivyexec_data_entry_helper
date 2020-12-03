@@ -6,4 +6,4 @@ Chrome extension
 In Google Chrome navigate to Settings> More Tools> Extensions. <br/>
 Enable Developer mode and click Load unpacked, then navigate to the location of unzipped extension folder and open it.</p> 
 
-<h3>Usage </hr3>
+<h3>Usage </h3>
