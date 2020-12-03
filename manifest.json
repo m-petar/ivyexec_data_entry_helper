@@ -1,0 +1,40 @@
+{
+ "name": "IvyExec Data Entry Helper",
+ "version": "1.0",
+ "content_scripts": [
+   {
+     "matches": [ "http://*/*", "https://*/*"],
+     "all_frames": true,
+     "exclude_globs": [ "https://www.ivyexec.com/*", "https://docs.google.com/*"],
+     "js": ["exp.js", "edu.js", "funcAndSpec.js", "setterContentScript.js", "data.js"],
+     "run_at": "document_idle"
+   },
+   {
+    "matches": [ "https://www.ivyexec.com/employers/jobs/add"],
+    "js": ["jquery-3.4.0.min.js", "getterContentScript.js"],
+    "run_at": "document_idle"
+  }
+ ],
+ "permissions": [
+  "tabs",
+  "activeTab",
+  "notifications",
+  "storage",
+  "contextMenus"
+ ],
+ "browser_action": {
+  "default_icon": "images/ivyIconGreen16.png",
+  "default_popup": "popup.html"
+},
+"background": {
+  "scripts": ["background.js"],
+  "persistant": false
+},
+ "icons": {
+  "16": "images/ivyIconGreen16.png",
+  "32": "images/ivyIconGreen32.png",
+  "48": "images/ivyIconGreen48.png",
+  "128": "images/ivyIconGreen128.png"
+},
+ "manifest_version": 2
+}

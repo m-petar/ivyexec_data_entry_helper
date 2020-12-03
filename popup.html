@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IvyExec Data Entry Helper</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+      body {
+        min-width: 600px;
+      }
+      .toggle-content {
+        font-weight: bold;
+        display: none;
+      }
+      .toggle-content.is-visible {
+        font-weight: bold;
+        display: block;
+      }
+      span {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>IvyExec</h3>
+    <p><span id="ivyStorage"></span></p>
+    <p class="toggle-content">Title: <span id="title"></span></p>
+    <p class="toggle-content">Original title: <span id="original_title"></span></p>
+    <p class="toggle-content">City: <span id="city"></span></p>
+    <p class="toggle-content">State: <span id="usaState"></span></p>
+    <p class="toggle-content">Country: <span id="country"></span></p>
+    <p class="toggle-content">URL: <span id="company_web_site"></span></p>
+    <p class="toggle-content">Functions <span id="function"></span></p>
+    <p class="toggle-content">Specialties <span id="specialty"></span></p>
+    <p class="toggle-content">Education <span id="degree"></span></p>
+    <p class="toggle-content">Years of Experience <span id="experience"></span></p>
+    <p class="toggle-content">Type of Position: <span id="positionTypeText"></span></p>
+    <p class="toggle-content">Description: <br /><span id="advertText"></span></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
