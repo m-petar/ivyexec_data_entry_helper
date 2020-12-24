@@ -199,7 +199,7 @@ function hotkey(event) {
     event.preventDefault();
     chrome.storage.local.clear(function() {
       if (chrome.runtime.lastError) {
-        console.log("greska: " + JSON.stringify(chrome.runtime.lastError));
+        console.log("Error: " + JSON.stringify(chrome.runtime.lastError));
       } else {
         chrome.runtime.sendMessage({ setBadge: "title" }, function(response) {
           console.log(response.farewell);

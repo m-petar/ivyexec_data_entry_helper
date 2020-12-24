@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   //console.log("Received %o from %o, frame", request, sender.tab, sender.frameId);
   
   if (request.tabAuth == "Is_IP_authorized?") { // currently takes no action other than logging, since main method has been commented out
-    if (ip == "188.2.69.123" || ip == "87.116.177.186") {
+    if (ip == "" || ip == "") {
       sendResponse({ tabAuthResponse: "IP Authorized" });
     } else {
       sendResponse({ tabAuthResponse: "Not Authorized!" });

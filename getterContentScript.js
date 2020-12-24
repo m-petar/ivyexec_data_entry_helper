@@ -132,9 +132,9 @@ function storageGet() {
 
       chrome.storage.local.clear(function() {
         if (chrome.runtime.lastError) {
-          console.log("greska: " + JSON.stringify(chrome.runtime.lastError));
+          console.log("Error: " + JSON.stringify(chrome.runtime.lastError));
         } else {
-          console.log("Obrisana memorija");
+          console.log("Memory cleared.");
         }
       });
     }
