@@ -3,7 +3,10 @@ Chrome extension
 <br/>
 <p>Helping to collect data from job advertisements on any company website, extract job function and specialty from its title as well as qualifications (expected years of experience as well as education) from job description. <br/> 
 Also, it automates form filling of the extracted data on a specified ivyexec company account with a single keyboard button press. <br/> 
-While not 100% accurate, it speeds up data collection, processing and form-filling for up to roughly 25%. </p>
+While not 100% accurate, it speeds up data collection, processing and form-filling for up to roughly 25%. 
+Note that data collection is enabled on any website, but form filling is limited to specific Ivyexec form, found only when logged <br/>
+into a company account. Still, after data collection has been performed, clicking the extension icon will display all data the app<br/>
+has collected and processed.</p>
 
 <h3>Installation </h3>
 <p>Download as a .zip file, then extract. <br/>
